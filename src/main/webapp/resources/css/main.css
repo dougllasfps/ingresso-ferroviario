@@ -2313,7 +2313,6 @@ input.num-product::-webkit-inner-spin-button {
 
 .topbar2{
   background: #000000;
-  
 }
 
 .topbar2>a{
@@ -2321,20 +2320,16 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .wrap_header{
-  background: #000000; 
+  background: #FF0000;
 }
 
 .main_menu>li>a{
   color: #FFFFFF;
 }
 
-.main_menu>li>a:hover{
-  color: #ff0000;
-}
-
 .main_menu>li:hover{
-  color: #ff0000;
-  border-bottom: 5px solid #ff0000;
+  color: #000000;
+  border-bottom: 5px solid #000000;
 }
 
 body > header > div.wrap-side-menu > nav > ul > li > a:hover{
@@ -2342,11 +2337,11 @@ body > header > div.wrap-side-menu > nav > ul > li > a:hover{
 }
 
 .wrap_header_mobile{
-  background: #000000;
+  background: #FF0000;
 }
 
 .wrap_header_mobile > a{
-  color: #FF0000;
+  color: #000000;
 }
 
 .wrap_header_mobile > a:hover{
