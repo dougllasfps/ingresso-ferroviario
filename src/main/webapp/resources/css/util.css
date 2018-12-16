@@ -2240,6 +2240,7 @@
 .t-left {text-align: left;}
 .t-right {text-align: right;}
 .t-middle {vertical-align: middle;}
+.t-bold{ font-weight: bold;}
 
 /* ------------------------------------ */
 .lh-1-0 {line-height: 1.0;}
@@ -3576,6 +3577,11 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 .size24 {
 	max-width: 1070px;
 	height: 100%;
+}
+
+.size25 {
+    min-width: 190px;
+    min-height: 60px;
 }
 
 /*[ Width Size ]

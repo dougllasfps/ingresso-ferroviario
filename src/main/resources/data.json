@@ -1,0 +1,64 @@
+{
+  "jogos": [
+    {
+      "timeCasa": "Fortaleza",
+      "timeDesafiante": "Ferroviário",
+      "campeonato": "Cearense",
+      "data": "01/01/2020",
+      "local": "a definir",
+      "imagem": "ferceara.jpg",
+      "valor": "16,00",
+      "descricaoPartida": "Estreia do Ferroviário no Campeonato Estadual 2019 contra o Atlético Cearense, antigo Uniclinic. Local e horário da partida ainda a confirmar."
+    },
+    {
+      "timeCasa": "Ferroviário",
+      "timeDesafiante": "Ceará",
+      "campeonato": "Cearense",
+      "data": "01/01/2020",
+      "local": "a definir",
+      "imagem": "ferfor.jpg",
+      "valor": "20,00",
+      "descricaoPartida": "Estreia do Ferroviário no Campeonato Estadual 2019 contra o Atlético Cearense, antigo Uniclinic. Local e horário da partida ainda a confirmar."
+    },
+    {
+      "timeCasa": "Ferroviário",
+      "timeDesafiante": "Vila Nova",
+      "campeonato": "Cearense",
+      "data": "01/01/2020",
+      "local": "a definir",
+      "imagem": "vilanova.jpg",
+      "valor": "16,00",
+      "descricaoPartida": "Estreia do Ferroviário no Campeonato Estadual 2019 contra o Atlético Cearense, antigo Uniclinic. Local e horário da partida ainda a confirmar."
+    },
+    {
+      "timeCasa": "Ferroviário",
+      "timeDesafiante": "Fortaleza",
+      "campeonato": "Cearense",
+      "data": "01/01/2020",
+      "local": "a definir",
+      "imagem": "ferfor.jpg",
+      "valor": "25,00",
+      "descricaoPartida": "Estreia do Ferroviário no Campeonato Estadual 2019 contra o Atlético Cearense, antigo Uniclinic. Local e horário da partida ainda a confirmar."
+    },
+    {
+      "timeCasa": "Ferroviário",
+      "timeDesafiante": "Ceará",
+      "campeonato": "Cearense",
+      "data": "01/01/2020",
+      "local": "a definir",
+      "imagem": "ferceara.jpg",
+      "valor": "16,00",
+      "descricaoPartida": "Estreia do Ferroviário no Campeonato Estadual 2019 contra o Atlético Cearense, antigo Uniclinic. Local e horário da partida ainda a confirmar."
+    },
+    {
+      "timeCasa": "Ferroviário",
+      "timeDesafiante": "Vila Nova",
+      "campeonato": "Cearense",
+      "data": "01/01/2020",
+      "local": "a definir",
+      "imagem": "vilanova.jpg",
+      "valor": "15,00",
+      "descricaoPartida": "Estreia do Ferroviário no Campeonato Estadual 2019 contra o Atlético Cearense, antigo Uniclinic. Local e horário da partida ainda a confirmar."
+    }
+  ]
+}

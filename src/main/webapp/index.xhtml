@@ -1,577 +1,243 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
+<ui:composition template="templates/template-publico.xhtml"
+      xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
-<h:head>
-    <title>Ferroviário</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" lang="pt_BR" />
-    <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="resources/images/ferroviario/simbolo_ferroviario_footer_mini.png"/>
-    <!--===============================================================================================-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!--===============================================================================================-->
-    <h:outputStylesheet library="vendor" name="bootstrap/css/bootstrap.min.css" />
-    <!--===============================================================================================-->
-    <h:outputStylesheet library="fonts" name="themify/themify-icons.css" />
-    <!--===============================================================================================-->
-    <h:outputStylesheet library="fonts" type="text/css" name="Linearicons-Free-v1.0.0/icon-font.min.css" />
-    <!--===============================================================================================-->
-    <h:outputStylesheet library="fonts" type="text/css" name="elegant-font/html-css/style.css" />
-    <!--===============================================================================================-->
-    <h:outputStylesheet library="vendor" type="text/css" name="animate/animate.css" />
-    <!--===============================================================================================-->
-    <h:outputStylesheet library="vendor" type="text/css" name="css-hamburgers/hamburgers.min.css" />
-    <!--===============================================================================================-->
-    <h:outputStylesheet library="vendor" type="text/css" name="animsition/css/animsition.min.css" />
-    <!--===============================================================================================-->
-    <h:outputStylesheet library="vendor" type="text/css" name="select2/select2.min.css" />
-    <!--===============================================================================================-->
-    <h:outputStylesheet library="vendor" type="text/css" name="daterangepicker/daterangepicker.css" />
-    <!--===============================================================================================-->
-    <h:outputStylesheet library="vendor" type="text/css" name="slick/slick.css" />
-    <!--===============================================================================================-->
-    <h:outputStylesheet library="vendor" type="text/css" name="lightbox2/css/lightbox.min.css" />
-    <!--===============================================================================================-->
-    <h:outputStylesheet library="css" type="text/css" name="util.css" />
-    <h:outputStylesheet library="css" type="text/css" name="main.css" />
-    <!--===============================================================================================-->
-</h:head>
-<h:body class="animsition">
+    <ui:define name="body">
+        <!-- banner Slides -->
+        <section class="slide1">
+            <div class="wrap-slick1">
+                <div class="slick1">
+                    <div class="item-slick1 item1-slick1" style="background-image: url(resources/images/ferroviario/fac-campeao.jpg);">
+                        <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                            <h2 class="caption1-slide1 xl-text2 t-center bo14 p-b-6 animated visible-false m-b-22" data-appear="fadeInUp">
+                                Ferroviário X Ceará
+                            </h2>
 
-<!-- header fixed aquele que é mostrado ao rolar a pagina pra baixo-->
-<div class="wrap_header fixed-header2 trans-0-4">
-    <!-- Logo -->
-    <a href="index.html" style="color: #000000;" class="logo">
-        <img src="resources/images/ferroviario/simbolo_ferroviario_footer_mini.png" alt=""/>
-        <strong style="vertical-align: bottom;">FERROVIÁRIO ATLÉTICO CLUBE </strong>
-    </a>
+                            <span class="caption2-slide1 m-text1 t-center animated visible-false m-b-33" data-appear="fadeInDown">
+                               Campeonato Cearense 2019
+                            </span>
 
-    <!-- Menu -->
-    <ui:include src="templates/fragments/menu-bar.xhtml" />
-
-    <!-- Header Icon -->
-    <div class="header-icons">
-        <div class="header-wrapicon2 m-b-17">
-            <i class="fa fa-shopping-cart header-icon1 js-show-header-dropdown "></i>
-            <span class="header-icons-noti">3</span>
-
-            <!-- Header cart noti -->
-            <ui:include src="templates/fragments/cart-header.xhtml" />
-        </div>
-    </div>
-</div>
-
-<!-- Header full padrão inicial-->
-<header class="header2">
-    <!-- Header desktop -->
-    <div class="container-menu-header-v2 p-t-26">
-        <div class="topbar2">
-            <div class="topbar-social">
-                <a href="http://facebook.com/ferroviario" target="_blank" class="topbar-social-item fa fa-facebook"></a>
-                <a href="http://www.instagram.com/ferroviarioac" target="_blank" class="topbar-social-item fa fa-instagram"></a>
-                <a href="https://twitter.com/ferroviario" target="_blank"  class="topbar-social-item fa fa-twitter"></a>
-                <a href="http://www.youtube.com/ferroviarioaclube" target="_blank" class="topbar-social-item fa fa-youtube-play"></a>
-            </div>
-
-            <!-- Logo2 -->
-            <a href="index.html" class="logo2">
-                <div style="text-align: center;">
-                    <img src="resources/images/ferroviario/simbolo_ferroviario_footer_mini.png" alt=""/>
-                    <br/>
-                    <strong>FERROVIÁRIO</strong><br/> ATLÉTICO CLUBE
-                </div>
-            </a>
-
-            <div class="topbar-child2">
-					<span class="topbar-email">
-						meuusuario@email.com
-					</span>
-
-                <!-- icone usuario  -->
-                <a href="#" class="header-wrapicon1 dis-block m-l-30 m-b-20">
-                    <i class="fa fa-user"></i>
-                </a>
-
-                <span class="linedivide1"></span>
-
-                <!-- icone carrinho -->
-                <div class="header-wrapicon2 m-r-13  m-b-18">
-                    <i class="fa fa-shopping-cart dis-block color1 red-hover header-icon1 js-show-header-dropdown"></i>
-
-                    <!--contador-->
-                    <span class="header-icons-noti">3</span>
-
-                    <!-- Header cart noti -->
-                    <ui:include src="templates/fragments/cart-header.xhtml" />
-                </div>
-            </div>
-        </div>
-
-        <div class="wrap_header">
-
-            <!-- Menu -->
-            <ui:include src="templates/fragments/menu-bar.xhtml" />
-
-            <!-- Header Icon -->
-            <div class="header-icons">
-            </div>
-        </div>
-    </div>
-
-    <!-- Header Mobile -->
-    <div class="wrap_header_mobile">
-        <!-- Logo moblie -->
-        <a href="index.html" class="logo-mobile">
-            <img src="resources/images/ferroviario/simbolo_ferroviario_footer_mini.png" alt=""/>
-            <strong style="vertical-align: bottom;">FERROVIÁRIO ATLÉTICO CLUBE</strong>
-        </a>
-
-        <!-- Button show menu -->
-        <div class="btn-show-menu">
-            <!-- Header Icon mobile -->
-            <div class="header-icons-mobile">
-                <a href="#" class="header-wrapicon1 dis-block">
-                    <img src="resources/images/icons/icon-header-01.png" class="header-icon1" alt="ICON" />
-                </a>
-
-                <span class="linedivide2"></span>
-
-                <div class="header-wrapicon2">
-                    <img src="resources/images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON" />
-                    <span class="header-icons-noti">0</span>
-
-                    <!-- Header cart noti -->
-                   <ui:include src="templates/fragments/cart-header.xhtml" />
-                </div>
-            </div>
-
-            <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Menu Mobile -->
-    <ui:include src="templates/fragments/menu-mobile.xhtml" />
-</header>
-
-<!-- banner Slides -->
-<section class="slide1">
-    <div class="wrap-slick1">
-        <div class="slick1">
-            <div class="item-slick1 item1-slick1" style="background-image: url(resources/images/ferroviario/fac-campeao.jpg);">
-                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-                    <h2 class="caption1-slide1 xl-text2 t-center bo14 p-b-6 animated visible-false m-b-22" data-appear="fadeInUp">
-                        Ferroviário X Ceará
-                    </h2>
-
-                    <span class="caption2-slide1 m-text1 t-center animated visible-false m-b-33" data-appear="fadeInDown">
-                       Campeonato Cearense 2019
-                    </span>
-
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
-                        <!-- Button -->
-                        <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-                           Comprar Agora
-                        </a>
+                            <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
+                                <!-- Button -->
+                                <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                                   Comprar Agora
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="item-slick1 item2-slick1" style="background-image: url(resources/images/master-slide-06.jpg);">
-                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-                    <h2 class="caption1-slide1 xl-text2 t-center bo14 p-b-6 animated visible-false m-b-22" data-appear="rollIn">
-                        Ferroviário X Ceará
-                    </h2>
+                    <div class="item-slick1 item2-slick1" style="background-image: url(resources/images/data/ferceara.jpg);">
+                        <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                            <h2 class="caption1-slide1 xl-text2 t-center bo14 p-b-6 animated visible-false m-b-22" data-appear="rollIn">
+                                Ferroviário X Ceará
+                            </h2>
 
-                    <span class="caption2-slide1 m-text1 t-center animated visible-false m-b-33" data-appear="lightSpeedIn">
-                        Campeonato Cearense 2019
-                    </span>
+                            <span class="caption2-slide1 m-text1 t-center animated visible-false m-b-33" data-appear="lightSpeedIn">
+                                Campeonato Cearense 2019
+                            </span>
 
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
-                        <!-- Button -->
-                        <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-                            Comprar Agora
-                        </a>
+                            <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
+                                <!-- Button -->
+                                <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                                    Comprar Agora
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="item-slick1 item3-slick1" style="background-image: url(resources/images/master-slide-02.jpg);">
-                <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-                    <h2 class="caption1-slide1 xl-text2 t-center bo14 p-b-6 animated visible-false m-b-22" data-appear="rotateInDownLeft">
-                        Ferroviário X Ceará
-                    </h2>
+                    <div class="item-slick1 item3-slick1" style="background-image: url(resources/images/data/vilanova.jpg);">
+                        <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                            <h2 class="caption1-slide1 xl-text2 t-center bo14 p-b-6 animated visible-false m-b-22" data-appear="rotateInDownLeft">
+                                Ferroviário X Ceará
+                            </h2>
 
-                    <span class="caption2-slide1 m-text1 t-center animated visible-false m-b-33" data-appear="rotateInUpRight">
-                        Campeonato Cearense 2019
-                    </span>
+                            <span class="caption2-slide1 m-text1 t-center animated visible-false m-b-33" data-appear="rotateInUpRight">
+                                Campeonato Cearense 2019
+                            </span>
 
-                    <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
-                        <!-- Button -->
-                        <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-                            Comprar Agora
-                        </a>
+                            <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
+                                <!-- Button -->
+                                <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                                    Comprar Agora
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
+        </section>
 
-        </div>
-    </div>
-</section>
+        <!-- jogos -->
+        <section class="blog bgwhite p-t-94 p-b-65">
+            <div class="container">
+                <div class="sec-title p-b-52">
+                    <h3 class="m-text5 t-center" style="color: #FF0000;">
+                        Próximos Jogos
+                    </h3>
+                </div>
 
-<!-- jogos -->
-<section class="blog bgwhite p-t-94 p-b-65">
-    <div class="container">
-        <div class="sec-title p-b-52">
-            <h3 class="m-text5 t-center" style="color: #FF0000;">
-                Próximos Jogos
-            </h3>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
-                <!-- Block3 -->
-                <div class="block3">
-                    <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
-                        <img src="resources/images/blog-01.jpg" alt="IMG-BLOG"/>
-                    </a>
-
-                    <div class="block3-txt p-t-14">
-                        <h4 class="p-b-7">
-                            <a href="blog-detail.html" class="m-text11">
-                                Ferroviário
-                                x
-                                Atlético Cearense
+                <div class="row t-center">
+                    <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
+                        <!-- Block3 -->
+                        <div class="block3">
+                            <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+                                <img  width="350" height="250" src="/resources/images/data/ferceara.jpg" alt="IMG-BLOG"/>
                             </a>
-                        </h4>
 
-                        <span class="s-text6">Campeonato Cearense</span>
-                        <span class="s-text6">Data</span> <span class="s-text7">06/01/2019</span>
-                        <span class="s-text6">Local</span> <span class="s-text7">a definir</span>
+                            <div class="block3-txt p-t-14">
+                                <h4 class="p-b-7">
+                                    <a href="blog-detail.html" class="m-text11">
+                                        Ferroviário
+                                        x
+                                        Atlético Cearense
+                                    </a>
+                                </h4>
 
-                        <p class="s-text8 p-t-16">
-                            Estreia do Ferroviário no Campeonato Estadual 2019 contra o Atlético Cearense, antigo Uniclinic. Local e horário da partida ainda a confirmar.
-                        </p>
+                                <span class="s-text6">Campeonato Cearense</span>
+                                <span class="s-text6">Data</span> <span class="s-text7">06/01/2019</span>
+                                <span class="s-text6">Local</span> <span class="s-text7">a definir</span>
+
+                                <p class="s-text8 p-t-16">
+                                    Estreia do Ferroviário no Campeonato Estadual 2019 contra o Atlético Cearense, antigo Uniclinic. Local e horário da partida ainda a confirmar.
+                                </p>
+
+                                <div class="block2-overlay trans-0-4">
+                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </a>
+
+                                    <div class="block2-btn-addcart w-size1 trans-0-4">
+                                        <!-- Button -->
+                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                            Adicionar ao Carrinho
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
-                <!-- Block3 -->
-                <div class="block3">
-                    <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
-                        <img src="resources/images/blog-01.jpg" alt="IMG-BLOG"/>
-                    </a>
-
-                    <div class="block3-txt p-t-14">
-                        <h4 class="p-b-7">
-                            <a href="blog-detail.html" class="m-text11">
-                                Ferroviário
-                                x
-                                Atlético Cearense
+                    <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
+                        <!-- Block3 -->
+                        <div class="block3">
+                            <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+                                <img  width="350" height="250" src="/resources/images/data/vilanova.jpg" alt="IMG-BLOG"/>
                             </a>
-                        </h4>
 
-                        <span class="s-text6">Campeonato Cearense</span>
-                        <span class="s-text6">Data</span> <span class="s-text7">06/01/2019</span>
-                        <span class="s-text6">Local</span> <span class="s-text7">a definir</span>
+                            <div class="block3-txt p-t-14">
+                                <h4 class="p-b-7">
+                                    <a href="blog-detail.html" class="m-text11">
+                                        Ferroviário
+                                        x
+                                        Atlético Cearense
+                                    </a>
+                                </h4>
 
-                        <p class="s-text8 p-t-16">
-                            Estreia do Ferroviário no Campeonato Estadual 2019 contra o Atlético Cearense, antigo Uniclinic. Local e horário da partida ainda a confirmar.
-                        </p>
+                                <span class="s-text6">Campeonato Cearense</span>
+                                <span class="s-text6">Data</span> <span class="s-text7">06/01/2019</span>
+                                <span class="s-text6">Local</span> <span class="s-text7">a definir</span>
+
+                                <p class="s-text8 p-t-16">
+                                    Estreia do Ferroviário no Campeonato Estadual 2019 contra o Atlético Cearense, antigo Uniclinic. Local e horário da partida ainda a confirmar.
+                                </p>
+
+                                <div class="block2-overlay trans-0-4">
+                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </a>
+
+                                    <div class="block2-btn-addcart w-size1 trans-0-4">
+                                        <!-- Button -->
+                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                            Adicionar ao Carrinho
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
-                <!-- Block3 -->
-                <div class="block3">
-                    <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
-                        <img src="resources/images/blog-01.jpg" alt="IMG-BLOG"/>
-                    </a>
-
-                    <div class="block3-txt p-t-14">
-                        <h4 class="p-b-7">
-                            <a href="blog-detail.html" class="m-text11">
-                                Ferroviário
-                                x
-                                Atlético Cearense
+                    <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
+                        <!-- Block3 -->
+                        <div class="block3">
+                            <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+                                <img width="350" height="250" src="/resources/images/data/ferfor.jpg" alt="IMG-BLOG"/>
                             </a>
-                        </h4>
 
-                        <span class="s-text6">Campeonato Cearense</span>
-                        <span class="s-text6">Data</span> <span class="s-text7">06/01/2019</span>
-                        <span class="s-text6">Local</span> <span class="s-text7">a definir</span>
+                            <div class="block3-txt p-t-14">
+                                <h4 class="p-b-7">
+                                    <a href="blog-detail.html" class="m-text11">
+                                        Ferroviário
+                                        x
+                                        Atlético Cearense
+                                    </a>
+                                </h4>
 
-                        <p class="s-text8 p-t-16">
-                            Estreia do Ferroviário no Campeonato Estadual 2019 contra o Atlético Cearense, antigo Uniclinic. Local e horário da partida ainda a confirmar.
-                        </p>
+                                <span class="s-text6">Campeonato Cearense</span>
+                                <span class="s-text6">Data</span> <span class="s-text7">06/01/2019</span>
+                                <span class="s-text6">Local</span> <span class="s-text7">a definir</span>
+
+                                <p class="s-text8 p-t-16">
+                                    Estreia do Ferroviário no Campeonato Estadual 2019 contra o Atlético Cearense, antigo Uniclinic. Local e horário da partida ainda a confirmar.
+                                </p>
+
+                                <div class="block2-overlay trans-0-4">
+                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </a>
+
+                                    <div class="block2-btn-addcart w-size1 trans-0-4">
+                                        <!-- Button -->
+                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                            Adicionar ao Carrinho
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Shipping -->
-<section class="shipping bgwhite p-t-62 p-b-46">
-    <div class="flex-w p-l-15 p-r-15">
-        <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
-            <h4 class="m-text12 t-center">
-                Basta pagar e imprimir o Ingresso
-            </h4>
+        <!-- Shipping -->
+        <section class="shipping bgwhite p-t-62 p-b-46">
+            <div class="flex-w p-l-15 p-r-15">
+                <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
+                    <h4 class="m-text12 t-center">
+                        Basta pagar e imprimir o Ingresso
+                    </h4>
 
-            <a href="#" class="s-text11 t-center">
-                Clique aqui para mais informações
-            </a>
-        </div>
+                    <a href="#" class="s-text11 t-center">
+                        Clique aqui para mais informações
+                    </a>
+                </div>
 
-        <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
-            <h4 class="m-text12 t-center">
-                Pagamento via Cartão ou Boleto
-            </h4>
+                <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
+                    <h4 class="m-text12 t-center">
+                        Pagamento via Cartão ou Boleto
+                    </h4>
 
-            <span class="s-text11 t-center">
-                Aprovação da compra do ingresso na hora
-            </span>
-        </div>
+                    <span class="s-text11 t-center">
+                        Aprovação da compra do ingresso na hora
+                    </span>
+                </div>
 
-        <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
-            <h4 class="m-text12 t-center">
-                Compre aqui todos os ingressos
-            </h4>
+                <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
+                    <h4 class="m-text12 t-center">
+                        Compre aqui todos os ingressos
+                    </h4>
 
-            <span class="s-text11 t-center">
-                Temos para todos os Jogos!
-            </span>
-        </div>
-    </div>
-</section>
-
-
-<!-- Footer -->
-<footer class="bg9 p-t-45 p-b-43 p-l-45 p-r-45">
-    <div class="flex-w p-b-90">
-        <div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
-            <h4 class="s-text12 p-b-30">
-                <img src="resources/images/ferroviario/cropped-fac-1-1-270x270.png" alt="" height="100" width="100"/>
-                FERROVIÁRIO ATLÉTICO CLUBE
-            </h4>
-
-            <div>
-                <p class="s-text7 w-size27">
-                    Rua Dona Filó, 650 - Barra do Ceará
-                    CEP: 60330-060 - Fortaleza/CE - Brasil
-                    Telefone: +55 (85) 3077.0878
-                </p>
-
-                <div class="flex-m p-t-30">
-                    <a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
-                    <a href="#" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
-                    <a href="#" class="fs-18 color1 p-r-20 fa fa-pinterest-p"></a>
-                    <a href="#" class="fs-18 color1 p-r-20 fa fa-snapchat-ghost"></a>
-                    <a href="#" class="fs-18 color1 p-r-20 fa fa-youtube-play"></a>
+                    <span class="s-text11 t-center">
+                        Temos para todos os Jogos!
+                    </span>
                 </div>
             </div>
-        </div>
+        </section>
+    </ui:define>
 
-        <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-            <h4 class="s-text12 p-b-30">
-                Categories
-            </h4>
-
-            <ul>
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Men
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Women
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Dresses
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Sunglasses
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-            <h4 class="s-text12 p-b-30">
-                Links
-            </h4>
-
-            <ul>
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Search
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        About Us
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Contact Us
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Returns
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-            <h4 class="s-text12 p-b-30">
-                Ajuda
-            </h4>
-
-            <ul>
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Track Order
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Returns
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        Shipping
-                    </a>
-                </li>
-
-                <li class="p-b-9">
-                    <a href="#" class="s-text7">
-                        FAQs
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="w-size8 p-t-30 p-l-15 p-r-15 respon3">
-            <h4 class="s-text12 p-b-30">
-                Receber Emails de Notícias
-            </h4>
-
-            <form>
-                <div class="effect1 w-size9">
-                    <input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="email@exemplo.com" />
-                    <span class="effect1-line"></span>
-                </div>
-
-                <div class="w-size2 p-t-20">
-                    <!-- Button -->
-                    <button class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
-                        Inscrever-se
-                    </button>
-                </div>
-
-            </form>
-        </div>
-    </div>
-
-    <div class="t-center p-l-15 p-r-15">
-        <a href="#">
-            <img class="h-size2" src="resources/images/icons/paypal.png" alt="IMG-PAYPAL" />
-        </a>
-
-        <a href="#">
-            <img class="h-size2" src="resources/images/icons/visa.png" alt="IMG-VISA" />
-        </a>
-
-        <a href="#">
-            <img class="h-size2" src="resources/images/icons/mastercard.png" alt="IMG-MASTERCARD" />
-        </a>
-
-        <a href="#">
-            <img class="h-size2" src="resources/images/icons/express.png" alt="IMG-EXPRESS" />
-        </a>
-
-        <a href="#">
-            <img class="h-size2" src="resources/images/icons/discover.png" alt="IMG-DISCOVER" />
-        </a>
-
-        <div class="t-center s-text8 p-t-20">
-            Copyright © 2018 Todos os Direitos Reservados. | <a href="http://www.digitoglobal.com.br" target="_blank">Dígito Global</a>
-        </div>
-    </div>
-</footer>
-
-<!--===============================================================================================-->
-<h:outputScript library="vendor" name="jquery/jquery-3.2.1.min.js" />
-<!--===============================================================================================-->
-<h:outputScript library="vendor" name="animsition/js/animsition.min.js" />
-<!--===============================================================================================-->
-<h:outputScript library="vendor" name="bootstrap/js/popper.js" />
-<h:outputScript library="vendor" name="bootstrap/js/bootstrap.min.js" />
-<!--===============================================================================================-->
-<h:outputScript library="vendor" name="select2/select2.min.js" />
-<h:outputScript>
-    $(".selection-1").select2({
-        minimumResultsForSearch: 20,
-        dropdownParent: $('#dropDownSelect1')
-    });
-</h:outputScript>
-<!--===============================================================================================-->
-<h:outputScript library="vendor" name="slick/slick.min.js" />
-<h:outputScript library="js" name="slick-custom.js" />
-<!--===============================================================================================-->
-<h:outputScript library="vendor" name="countdowntime/countdowntime.js" />
-<!--===============================================================================================-->
-<h:outputScript library="vendor" name="lightbox2/js/lightbox.min.js" />
-<!--===============================================================================================-->
-<h:outputScript library="vendor" name="sweetalert/sweetalert.min.js" />
-<h:outputScript>
-    $('.block2-btn-addcart').each(function(){
-        var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-        $(this).on('click', function(){
-            swal(nameProduct, "is added to cart !", "success");
-        });
-    });
-
-    $('.block2-btn-addwishlist').each(function(){
-        var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-        $(this).on('click', function(){
-            swal(nameProduct, "is added to wishlist !", "success");
-        });
-    });
-</h:outputScript>
-
-<!--===============================================================================================-->
-<h:outputScript library="vendor" name="parallax100/parallax100.js" />
-<h:outputScript>
-    $('.parallax100').parallax100();
-</h:outputScript>
-<!--===============================================================================================-->
-<h:outputScript library="js" name="main.js" />
-
-</h:body>
-</html>
+</ui:composition>

@@ -6,51 +6,123 @@
         xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
         xmlns:p="http://primefaces.org/ui">
 
-    <div class="wrap-side-menu" >
-        <nav class="side-menu">
-            <ul class="main-menu">
-                <li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
-                    <div class="topbar-child2-mobile">
-                        <span class="topbar-email">
-                            meuusuario@email.com
-                        </span>
-                    </div>
-                </li>
+    <!-- header fixed aquele que é mostrado ao rolar a pagina pra baixo-->
+    <div class="wrap_header fixed-header2 trans-0-4">
+        <!-- Logo -->
+        <a href="index.html" style="color: #000000;" class="logo">
+            <img src="/resources/images/ferroviario/simbolo_ferroviario_footer_mini.png" alt=""/>
+            <strong style="vertical-align: bottom;">FERROVIÁRIO ATLÉTICO CLUBE </strong>
+        </a>
 
-                <li class="item-topbar-mobile p-l-10">
-                    <div class="topbar-social-mobile">
-                        <a href="#" class="topbar-social-item fa fa-facebook"></a>
-                        <a href="#" class="topbar-social-item fa fa-instagram"></a>
-                        <a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
-                        <a href="#" class="topbar-social-item fa fa-youtube-play"></a>
-                    </div>
-                </li>
+        <!-- Menu -->
+        <ui:include src="fragments/menu-bar.xhtml" />
 
-                <li class="item-menu-mobile">
-                    <a href="index.html">Início</a>
-                    <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
-                </li>
+        <!-- Header Icon -->
+        <div class="header-icons">
+            <div class="header-wrapicon2 m-b-17">
+                <i class="fa fa-shopping-cart header-icon1 js-show-header-dropdown "></i>
+                <span class="header-icons-noti">3</span>
 
-                <li class="item-menu-mobile">
-                    <a href="product.html">Jogos</a>
-                </li>
-
-                <li class="item-menu-mobile">
-                    <a href="product.html">Site Oficial</a>
-                </li>
-
-                <li class="item-menu-mobile">
-                    <a href="cart.html">Meu Carrinho</a>
-                </li>
-
-                <li class="item-menu-mobile">
-                    <a href="blog.html">Cadastro</a>
-                </li>
-
-                <li class="item-menu-mobile">
-                    <a href="about.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
+                <!-- Header cart noti -->
+                <ui:include src="fragments/cart-header.xhtml" />
+            </div>
+        </div>
     </div>
+
+    <!-- Header full padrão inicial-->
+    <header class="header2">
+        <!-- Header desktop -->
+        <div class="container-menu-header-v2 p-t-26">
+            <div class="topbar2">
+                <div class="topbar-social">
+                    <a href="http://facebook.com/ferroviario" target="_blank" class="topbar-social-item fa fa-facebook"></a>
+                    <a href="http://www.instagram.com/ferroviarioac" target="_blank" class="topbar-social-item fa fa-instagram"></a>
+                    <a href="https://twitter.com/ferroviario" target="_blank"  class="topbar-social-item fa fa-twitter"></a>
+                    <a href="http://www.youtube.com/ferroviarioaclube" target="_blank" class="topbar-social-item fa fa-youtube-play"></a>
+                </div>
+
+                <!-- Logo2 -->
+                <a href="index.html" class="logo2">
+                    <div style="text-align: center;">
+                        <img src="/resources/images/ferroviario/simbolo_ferroviario_footer_mini.png" alt=""/>
+                        <br/>
+                        <strong>FERROVIÁRIO</strong><br/> ATLÉTICO CLUBE
+                    </div>
+                </a>
+
+                <div class="topbar-child2">
+					<span class="topbar-email">
+						meuusuario@email.com
+					</span>
+
+                    <!-- icone usuario  -->
+                    <a href="#" class="header-wrapicon1 dis-block m-l-30 m-b-20">
+                        <i class="fa fa-user"></i>
+                    </a>
+
+                    <span class="linedivide1"></span>
+
+                    <!-- icone carrinho -->
+                    <div class="header-wrapicon2 m-r-13  m-b-18">
+                        <i class="fa fa-shopping-cart dis-block color1 red-hover header-icon1 js-show-header-dropdown"></i>
+
+                        <!--contador-->
+                        <span class="header-icons-noti">3</span>
+
+                        <!-- Header cart noti -->
+                        <ui:include src="fragments/cart-header.xhtml" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap_header">
+
+                <!-- Menu -->
+                <ui:include src="fragments/menu-bar.xhtml" />
+
+                <!-- Header Icon -->
+                <div class="header-icons">
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Mobile -->
+        <div class="wrap_header_mobile">
+            <!-- Logo moblie -->
+            <a href="index.html" class="logo-mobile">
+                <img src="/resources/images/ferroviario/simbolo_ferroviario_footer_mini.png" alt=""/>
+                <strong style="vertical-align: bottom;">FERROVIÁRIO ATLÉTICO CLUBE</strong>
+            </a>
+
+            <!-- Button show menu -->
+            <div class="btn-show-menu">
+                <!-- Header Icon mobile -->
+                <div class="header-icons-mobile">
+                    <a href="#" class="header-wrapicon1 dis-block">
+                        <img src="/resources/images/icons/icon-header-01.png" class="header-icon1" alt="ICON" />
+                    </a>
+
+                    <span class="linedivide2"></span>
+
+                    <div class="header-wrapicon2">
+                        <img src="/resources/images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON" />
+                        <span class="header-icons-noti">0</span>
+
+                        <!-- Header cart noti -->
+                        <ui:include src="fragments/cart-header.xhtml" />
+                    </div>
+                </div>
+
+                <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <ui:include src="fragments/menu-mobile.xhtml" />
+    </header>
+
 </ui:composition>

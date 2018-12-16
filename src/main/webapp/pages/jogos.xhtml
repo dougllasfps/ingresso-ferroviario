@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="/templates/template-publico.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+    <ui:define name="body">
+
+
+        <!-- jogos -->
+        <section class="blog bgwhite p-t-94 p-b-65">
+            <div class="container">
+                <div class="sec-title p-b-52">
+                    <h3 class="m-text5 t-center" style="color: #FF0000;">
+                        <h:outputText value="INGRESSOS A VENDA" />
+                    </h3>
+                </div>
+
+                <div class="row">
+                    <ui:repeat value="#{jogosBean.jogos}" var="jogo" varStatus="index"  >
+                        <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto m-b-20">
+                            <!-- Block3 -->
+                            <div class="block3">
+                                <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+                                    <img src="/resources/images/data/#{jogo.imagem}" width="300" height="200" alt="IMG-BLOG"/>
+                                </a>
+
+                                <div class="block3-txt p-t-14 t-center">
+                                    <h3 class="p-b-7 ">
+                                        <a href="blog-detail.html" class="m-text11 t-bold">
+                                            #{jogo.timeCasa}
+                                            x
+                                            #{jogo.timeDesafiante}
+                                        </a>
+                                    </h3>
+
+                                    <span class="s-text6 ">#{jogo.campeonato}</span>
+                                    <span class="s-text6">Data</span> <span class="s-text7">#{jogo.data}</span>
+                                    <span class="s-text6">Local</span> <span class="s-text7">#{jogo.local}</span>
+
+                                    <p class="s-text8 p-t-16">
+                                        #{jogo.descricaoPartida}
+                                    </p>
+
+                                    <h3 class="p-b-7 t-bold">
+                                       R$ #{jogo.valor}
+                                    </h3>
+
+                                    <div class="block2-overlay trans-0-4">
+                                        <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </a>
+
+                                        <div class="block2-btn-addcart w-size1 trans-0-4">
+                                            <!-- Button -->
+                                            <button class="flex-c-m size25 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                Adicionar  (R$ #{jogo.valor})
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ui:repeat>
+                    <br />
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Shipping -->
+        <section class="shipping bgwhite p-t-62 p-b-46">
+            <div class="flex-w p-l-15 p-r-15">
+                <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
+                    <h4 class="m-text12 t-center">
+                        Basta pagar e imprimir o Ingresso
+                    </h4>
+
+                    <a href="#" class="s-text11 t-center">
+                        Clique aqui para mais informações
+                    </a>
+                </div>
+
+                <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
+                    <h4 class="m-text12 t-center">
+                        Pagamento via Cartão ou Boleto
+                    </h4>
+
+                    <span class="s-text11 t-center">
+                        Aprovação da compra do ingresso na hora
+                    </span>
+                </div>
+
+                <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
+                    <h4 class="m-text12 t-center">
+                        Compre aqui todos os ingressos
+                    </h4>
+
+                    <span class="s-text11 t-center">
+                        Temos para todos os Jogos!
+                    </span>
+                </div>
+            </div>
+        </section>
+    </ui:define>
+
+</ui:composition>
