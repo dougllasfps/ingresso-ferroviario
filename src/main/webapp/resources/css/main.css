@@ -2325,6 +2325,7 @@ input.num-product::-webkit-inner-spin-button {
 
 .main_menu>li>a{
   color: #FFFFFF;
+  font-weight: bold;
 }
 
 .main_menu>li:hover{
@@ -2346,4 +2347,16 @@ body > header > div.wrap-side-menu > nav > ul > li > a:hover{
 
 .wrap_header_mobile > a:hover{
   color: #FFFFFF;
+}
+
+.header-wrapicon1{
+      font-size: 30px;
+  }
+
+.header-wrapicon2{
+    font-size: 30px;
+}
+
+.red-hover:hover{
+    color: #FF0000;
 }
