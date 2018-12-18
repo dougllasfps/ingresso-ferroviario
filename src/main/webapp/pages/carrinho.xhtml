@@ -3,7 +3,8 @@
 <ui:composition template="/templates/template-publico.xhtml"
                 xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
-                xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:c="http://java.sun.com/jsp/jstl/core">
+                xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:c="http://java.sun.com/jsp/jstl/core"
+                xmlns:jsf="http://xmlns.jcp.org/jsf">
 
     <ui:define name="body">
 
@@ -134,7 +135,7 @@
 
                     <div class="size15 trans-0-4">
                         <!-- Button -->
-                        <button class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
+                        <button class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4" onclick="window.location= '/pages/pagamento.xhtml'">
                             Pagar
                         </button>
                     </div>
