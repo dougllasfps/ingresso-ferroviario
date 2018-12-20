@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition template="templates/template-publico.xhtml"
-      xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:c="http://java.sun.com/jsp/jstl/core">
 
     <ui:define name="body">
+
         <!-- banner Slides -->
         <section class="slide1">
             <div class="wrap-slick1">
                 <div class="slick1">
-                    <div class="item-slick1 item1-slick1" style="background-image: url(resources/images/ferroviario/fac-campeao.jpg);">
+                    <div class="item-slick1 item1-slick1" style="background-image: url(#{contextPath}/resources/images/ferroviario/fac-campeao.jpg);">
                         <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
                             <h2 class="caption1-slide1 xl-text2 t-center bo14 p-b-6 animated visible-false m-b-22" data-appear="fadeInUp">
                                 Ferroviário X Ceará
@@ -29,7 +30,7 @@
                         </div>
                     </div>
 
-                    <div class="item-slick1 item2-slick1" style="background-image: url(resources/images/data/ferceara.jpg);">
+                    <div class="item-slick1 item2-slick1" style="background-image: url(#{contextPath}/resources/images/data/ferceara.jpg);">
                         <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
                             <h2 class="caption1-slide1 xl-text2 t-center bo14 p-b-6 animated visible-false m-b-22" data-appear="rollIn">
                                 Ferroviário X Ceará
@@ -48,7 +49,7 @@
                         </div>
                     </div>
 
-                    <div class="item-slick1 item3-slick1" style="background-image: url(resources/images/data/vilanova.jpg);">
+                    <div class="item-slick1 item3-slick1" style="background-image: url(#{contextPath}/resources/images/data/vilanova.jpg);">
                         <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
                             <h2 class="caption1-slide1 xl-text2 t-center bo14 p-b-6 animated visible-false m-b-22" data-appear="rotateInDownLeft">
                                 Ferroviário X Ceará
@@ -85,7 +86,7 @@
                         <!-- Block3 -->
                         <div class="block3">
                             <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
-                                <img  width="350" height="250" src="/resources/images/data/ferceara.jpg" alt="IMG-BLOG"/>
+                                <img  width="350" height="250" src="#{contextPath}/resources/images/data/ferceara.jpg" alt="IMG-BLOG"/>
                             </a>
 
                             <div class="block3-txt p-t-14">
@@ -125,7 +126,7 @@
                         <!-- Block3 -->
                         <div class="block3">
                             <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
-                                <img  width="350" height="250" src="/resources/images/data/vilanova.jpg" alt="IMG-BLOG"/>
+                                <img  width="350" height="250" src="#{contextPath}/resources/images/data/vilanova.jpg" alt="IMG-BLOG"/>
                             </a>
 
                             <div class="block3-txt p-t-14">
@@ -165,7 +166,7 @@
                         <!-- Block3 -->
                         <div class="block3">
                             <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
-                                <img width="350" height="250" src="/resources/images/data/ferfor.jpg" alt="IMG-BLOG"/>
+                                <img width="350" height="250" src="#{contextPath}/resources/images/data/ferfor.jpg" alt="IMG-BLOG"/>
                             </a>
 
                             <div class="block3-txt p-t-14">

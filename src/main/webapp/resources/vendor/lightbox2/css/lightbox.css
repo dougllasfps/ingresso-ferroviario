@@ -1,6 +1,10 @@
 /* Preload images */
 body:after {
-  content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
+  /*content:*/
+           /*url("#{resource['vendor:lightbox2/images/close.png']}")*/
+           /*url("#{resource['vendor:lightbox2/images/loading.png']}")*/
+           /*url("#{resource['vendor:lightbox2/images/prev.png']}")*/
+           /*url("#{resource['vendor:lightbox2/images/next.png']}");*/
   display: none;
 }
 
