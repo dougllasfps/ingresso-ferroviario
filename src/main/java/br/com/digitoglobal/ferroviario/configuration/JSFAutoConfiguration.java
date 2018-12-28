@@ -58,4 +58,5 @@ public class JSFAutoConfiguration implements ServletContextAware, WebMvcConfigur
         registry.addViewController( "/" ).setViewName( "forward:/index.xhtml" );
         registry.setOrder( Ordered.HIGHEST_PRECEDENCE );
     }
+
 }

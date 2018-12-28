@@ -15,8 +15,10 @@ import javax.faces.context.FacesContext;
 @ConditionalOnWebApplication
 @ConditionalOnClass({FacesContext.class, UIViewRoot.class})
 public class ScopesAutoConfiguration implements BeanFactoryPostProcessor {
+
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory configurableListableBeanFactory) throws BeansException {
         configurableListableBeanFactory.registerScope("view", ViewScopeImp.createInstance());
     }
+
 }

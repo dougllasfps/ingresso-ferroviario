@@ -9,4 +9,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories(basePackages = {"br.com.digitoglobal.ferroviario.model.repository"})
 public class DataBaseConfiguration {
 
+
+
 }

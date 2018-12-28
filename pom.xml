@@ -2,21 +2,33 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <groupId>br.com.digitoglobal</groupId>
+    <artifactId>ferroviario</artifactId>
+
+    <version>1.0.0</version>
+
+    <!--<packaging>jar</packaging>-->
+    <packaging>war</packaging>
+
+    <name>Ferroviário - Venda de Ingressos</name>
+    <description>Sistema de Venda de Ingressos dos Jogos do Ferroviário</description>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>br.com.digitoglobal</groupId>
-    <artifactId>ferroviario</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>ferroviario</name>
-    <description>Aplicação de venda de ingressos do ferroviário</description>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>1.8</java.version>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+        <start-class>br.com.digitoglobal.ferroviario.FerroviarioApplication</start-class>
     </properties>
 
     <dependencies>
@@ -144,6 +156,7 @@
     </dependencies>
 
     <build>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -164,7 +177,7 @@
             </resource>
 
         </resources>
-    </build>
 
+    </build>
 
 </project>

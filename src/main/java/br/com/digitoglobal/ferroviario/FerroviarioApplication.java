@@ -10,4 +10,5 @@ public class FerroviarioApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(FerroviarioApplication.class, args);
     }
+
 }
