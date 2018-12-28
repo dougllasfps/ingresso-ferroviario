@@ -45,7 +45,7 @@ public class JSFAutoConfiguration implements ServletContextAware, WebMvcConfigur
         servletContext.setInitParameter("com.sun.faces.displayConfiguration", "true");
         servletContext.setInitParameter("com.sun.faces.disableIdUniquenessCheck", "true");
 
-        servletContext.setInitParameter("primefaces.THEME" , "bootstrap");
+//        servletContext.setInitParameter("primefaces.THEME" , "bootstrap");
         servletContext.setInitParameter("primefaces.UPLOADER" , "native" );
     }
 
