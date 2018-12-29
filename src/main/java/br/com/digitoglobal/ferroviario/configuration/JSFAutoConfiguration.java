@@ -39,7 +39,6 @@ public class JSFAutoConfiguration implements ServletContextAware, WebMvcConfigur
         servletContext.setInitParameter("com.sun.faces.allowTextChildren" , "true" );
         servletContext.setInitParameter("com.sun.faces.enableMissingResourceLibraryDetection" , "false" );
         servletContext.setInitParameter("com.sun.faces.expressionFactory", "com.sun.el.ExpressionFactoryImpl");
-
         //http://balusc.omnifaces.org/2015/09/what-mojarra-context-parameters-are.html
         servletContext.setInitParameter("com.sun.faces.enableLazyBeanValidation", "false");
         servletContext.setInitParameter("com.sun.faces.displayConfiguration", "true");
