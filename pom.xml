@@ -8,8 +8,8 @@
 
     <version>1.0.0</version>
 
-    <!--<packaging>jar</packaging>-->
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
+    <!--<packaging>war</packaging> -->
 
     <name>Ferroviário - Venda de Ingressos</name>
     <description>Sistema de Venda de Ingressos dos Jogos do Ferroviário</description>
