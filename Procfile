@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar -Dspring.profiles.active=production target/ferroviario-1.0-SNAPSHOT.jar
+web: java -Dserver.port=$PORT -jar target/ferroviario-1.0.0.jar
